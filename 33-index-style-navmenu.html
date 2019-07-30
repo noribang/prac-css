@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="x-ua-compatible" content="ie-edge" />
+		<meta name="keywords" content="html css javascript" />
+		<meta name="description" content="fundamental html css" />
+
+		<title>Page Layout</title>
+
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="icon" href="./images/favicon.png" />
+
+		<style>
+			html {
+				background-color: #72C69F;
+			}
+			body {
+				font-family: Tahoma, sans-serif;
+				font-size: 87%;
+			}
+			.container {
+				max-width: 940px;
+				margin-left: auto;
+				margin-right: auto;
+				background-color: #fff;
+				padding-left: 40px;
+    			padding-right: 40px;
+    			box-sizing: border-box;
+			}
+			header {
+				padding-top: 40px;
+				/*padding-bottom: 40px;*/
+				color: #1D553B;
+			}
+			header h1 {
+				margin: 0;
+				font-weight: normal;
+				font-size: 165%;
+			}
+			header p {
+				margin: 0;
+			}
+			/* Site Navigation */
+			.site-nav {
+				margin: 20px 0 0 0;
+			}
+			.site-nav ul {
+				/*border: 1px solid #000;*/
+				margin: 0;
+				padding: 0;
+			}
+
+			.site-nav li {
+				list-style: none;
+				float: left;
+				margin: 0 5px 0 0;
+			}
+			.site-nav a {
+				display: block;
+				color: #1D553B;
+				text-decoration: none;
+				padding: 10px 20px;
+				border: 3px solid #ACB9B3;
+				border-bottom: none;
+			}
+			.site-nav a:hover {
+				background-color: #ACB9B3;
+			}
+			/* End Site Navigation */
+			.content-area {
+				border-top: 3px solid #ACB9B3;
+				border-bottom: 3px solid #ACB9B3;
+			}
+			.main-area {
+				width: 66%;
+				float: left;
+				padding-right: 40px;
+				box-sizing: border-box;	
+			}
+			.sidebar {
+				width: 34%;
+				float: left;
+				background-color: #ACB9B3;
+				padding-left: 40px;
+				padding-right: 40px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				box-sizing: border-box;
+				font-size: 85%;
+			}
+			footer {
+				text-align: center;
+				font-size: 85%;
+				color: #999;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			/* Clears child floats. */
+			.fix {
+				clear: both;
+			}
+			/* Clearfix. */
+			.group:before,
+			.group:after {
+				content: "";
+				display: table;
+			}
+			.group:after {
+				clear: both;
+			}
+			.group {
+				zoom: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Website Title</h1>
+				<p>Website slogan included here.</p>
+
+				<nav class="site-nav">
+					<ul class="group">
+						<li><a href="">Home</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Portfolio</a></li>
+						<li><a href="">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div class="content-area group">
+				<div class="main-area">
+					<p>This is the main area (or column). Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					<p>This is the main area (or column). Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				</div>
+
+				<aside class="sidebar">
+					<p>This is the sidebar. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</aside>
+
+				<!-- <div class="fix"></div> -->
+			</div>
+
+
+
+			<footer>
+				<p>&copy;2019 - This is the footer.</p>
+			</footer>
+		</div>
+		
+		
+		
+		<script type="text/javascript" src="./js/script.js"></script>
+	</body>
+</html>
