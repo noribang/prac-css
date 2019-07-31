@@ -14,6 +14,47 @@
 
 	</head>
 	<body>
+		<header>
+			<h1>Select Dropdown, Radio buttons, Checkboxes...</h1>
+		</header>
+
+		<!-- Dropdown box -->
+		<label for="favoriteColor">What is your favorite color?</label>
+		<select id="favoriteColor" name="favoriteColor">
+			<option value="colorRed">Red</option>
+			<option value="colorOrange">Orange</option>
+			<option value="colorBlue">Blue</option>
+		</select>
+		<br />
+		<br />
+
+		<!-- Radio button -->
+		<fieldset>
+			<legend>What is your favorite meal?</legend>
+			<input type="radio" id="breakfast" name="favoriteMeal" value="meal1"><label for="breakfast">Breakfast</label>
+			<input type="radio" id="brunch" name="favoriteMeal" value="meal2"><label for="brunch">Brunch</label>
+			<input type="radio" id="lunch" name="favoriteMeal" value="meal3"><label for="lunch">Lunch</label>
+		</fieldset>
+
+		<br />
+		<br />
+
+		<!-- Checkbox -->
+		<fieldset>
+			<legend>Which meats do you enjoy?</legend>
+			<input type="checkbox" id="chicken" name="favoriteMeat" value="meat1"><label for="chicken">Chicken</label>
+			<input type="checkbox" id="beef" name="favoriteMeat" value="meat2"><label for="beef">Beef</label>
+			<input type="checkbox" id="fish" name="favoriteMeat" value="meat3"><label for="fish">Fish</label>
+		</fieldset>
+
+		<br />
+		<br />
+		<br />
+		<br />
+
+		<header>
+			<h1>Forms-Different types</h1>
+		</header>
 		<form>
 			<label for="email">Email:</label>
 			<input id="email" type="email" name="email">
@@ -33,6 +74,9 @@
 		<br />
 		<br />
 
+		<header>
+			<h1>Forms-Basic</h1>
+		</header>
 		<form>
 			<label>First Name:</label>
 			<input type="text" />
