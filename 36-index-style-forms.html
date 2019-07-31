@@ -81,7 +81,7 @@
 			}
 			/*Form styles*/
 			form {
-				border: 1px solid #000;
+				/*border: 1px solid #000;*/
 				background-color: #ececec;
 				padding: 30px 40px;
 			}
@@ -93,15 +93,64 @@
 				overflow: hidden;
 				visibility: hidden;
 			}
+			input, select {
+				font-family: Tahoma, sans-serif;
+				font-size: 100%;
+			}
+			select {
+				-webkit-appearance: none;
+				-webkit-border-radius: 0;
+				border-radius: 0;
+			}
 
 			input[type="email"],
-			input[type="password"] {
+			input[type="password"],
+			input[type="text"],
+			input[type="number"],
+			input[type="tel"],
+			select {
 				width: 100%;
 				display: block;
 				box-sizing: border-box;
 				padding: 0 10px 0 10px;
 				height: 40px;
+			/*	font-family: Tahoma, sans-serif;
+				font-size: 100%;*/
+				margin: 0 0 15px 0;
+				border: 1px solid #cdcdcd;
+				outline: none;
 			}
+			input[type="email"]:focus,
+			input[type="password"]:focus,
+			input[type="text"]:focus,
+			input[type="number"]:focus,
+			input[type="tel"]:focus {
+				border: 1px solid red;
+				box-shadow: inset 2px 2px 2px rgba(0,0,0,.13);
+				background-color: yellow;
+			}
+			input[type="submit"] {
+				width: 100%;
+				display: block;
+				box-sizing: border-box;
+				background-color: #869960;
+				color: #fff;
+				padding: 10px 0;
+				border: 1px solid #798A56;
+				border-radius: 3px;
+				margin: 0 0 10px 0;
+				outline: none;
+			}
+			input[type="submit"]:hover,
+			input[type="submit"]:focus {
+				border: 1px solid #535E38;
+				background-color: #798A56;
+			}
+			.checkbox-text {
+				font-size: 85%;
+				color: #777;
+			}
+
 			/*End Form styles*/
 			.sidebar {
 				width: 34%;
